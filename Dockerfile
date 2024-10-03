@@ -1,12 +1,17 @@
-FROM python:3.8-slim-buster
+# Use the official Python image from the Docker Hub
+FROM python:3.11
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+# Set the working directory in the container
+WORKDIR /app
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN JishuDeveloper /Ultra-Forward-Bot
-WORKDIR /Ultra-Forward-Bot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"] 
+# Copy the requirements file to the container
+COPY requirements.txt .
+
+# Install the dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the entire project to the working directory
+COPY . .
+
+# Command to run the bot
+CMD ["python", "bot.py"]
