@@ -9,9 +9,9 @@
 import os
 
 class Config:
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "28776072")
+    API_HASH = os.environ.get("API_HASH", "b3a786dce1f4e7d56674b7cadfde3c9d")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7332604369:AAGOEgjVZeXacMoyOlJBxZvtoX41wc8zzCI") 
     BOT_SESSION = os.environ.get("BOT_SESSION", "forward-bot") 
     DB_URL = os.environ.get("DB_URL", "mongodb+srv://ftmserver:ftm@cluster0.fneio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     DB_NAME = os.environ.get("DB_NAME", "Cluster0")
