@@ -64,10 +64,7 @@ class Bot(Client):
            logging.info(f"Restart message status"
                  f"success: {success}"
                  f"failed: {failed}")
-# Use the PORT environment variable or default to 8000
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
-    
+
     async def stop(self, *args):
         msg = f"@{self.username} stopped. Bye."
         await super().stop()
