@@ -11,7 +11,7 @@ import os
 class Config:
     API_ID = os.environ.get("API_ID", "28776072")
     API_HASH = os.environ.get("API_HASH", "b3a786dce1f4e7d56674b7cadfde3c9d")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7902709403:AAFnehaBN0TQOokA52ONB_wfTKOxO_p8VRo") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7639383535:AAEJzJp5I_4bC9Qa-awU51-b3HymsAqe-wI") 
     BOT_SESSION = os.environ.get("BOT_SESSION", "forward-bot") 
     DB_URL = os.environ.get("DB_URL", "mongodb+srv://ftm:ftm@cluster0.rhceu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     DB_NAME = os.environ.get("DB_NAME", "Cluster0")
@@ -24,11 +24,7 @@ class temp(object):
     forwardings = 0
     BANNED_USERS = []
     IS_FRWD_CHAT = []
-    
-
-
-
-
+   
 
 
 # Jishu Developer 
